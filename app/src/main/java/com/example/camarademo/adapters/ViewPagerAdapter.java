@@ -48,7 +48,7 @@ public class ViewPagerAdapter extends PagerAdapter {
 
          Bitmap myBitmap = BitmapFactory.decodeFile(imagePaths.get(position));
          Matrix matrix = new Matrix();
-         matrix.postRotate(90);
+         matrix.postRotate(0);
          Bitmap rotatedBitmap = Bitmap.createBitmap(myBitmap, 0, 0, myBitmap.getWidth(), myBitmap.getHeight(), matrix, true);
          imageView.setImageBitmap(rotatedBitmap);
 
